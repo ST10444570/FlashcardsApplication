@@ -13,7 +13,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/quizScreenHeading"
+            android:id="@+id/screenHeading"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/besley"
@@ -23,13 +23,22 @@
             android:textSize="34sp" />
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/Logo"
             android:layout_width="match_parent"
             android:layout_height="382dp"
             app:srcCompat="@drawable/flashcards_logo" />
 
         <TextView
             android:id="@+id/questionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="#0F0E0E"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/resultText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TextView"
