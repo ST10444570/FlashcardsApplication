@@ -10,7 +10,7 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 
-class QuizScreen : Fragment(R.layout.quiz_screen) {
+class quizScreen : Fragment(R.layout.quiz_screen) {
     private val questions = listOf(
         Pair("The earth is flat.", false),
         Pair("Kotlin is used for Android development.", true),
@@ -78,7 +78,7 @@ class QuizScreen : Fragment(R.layout.quiz_screen) {
                     val bundle = Bundle().apply {
                         putInt("score", score)
                     }
-                    findNavController().navigate(R.id.action_quizScreen_to_scoreScreen, bundle)
+                    findNavController().navigate(R.id.action_quizFragment_to_scoreFragment, bundle)
                 }
             }, 1000)
         }

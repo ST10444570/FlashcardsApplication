@@ -27,7 +27,7 @@ class ScoreScreen : Fragment(R.layout.score_screen) {
         }
 
         exitButton.setOnClickListener {
-            findNavController().navigate(R.id.action_resultFragment_to_welcomeFragment)
+            findNavController().navigate(R.id.action_scoreFragment_to_welcomeFragment)
         }
     }
 

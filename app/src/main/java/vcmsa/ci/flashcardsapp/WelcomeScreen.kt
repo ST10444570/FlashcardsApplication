@@ -12,8 +12,7 @@ class WelcomeScreen : Fragment(R.layout.welcome_screen) {
 
         val startButton: Button = view.findViewById(R.id.btnStart)
         startButton.setOnClickListener {
-            findNavController().navigate(R.id.action_welcomeScreen_to_quizScreen)
+            findNavController().navigate(R.id.action_welcomeFragment_to_quizFragment)
         }
     }
 }
-
