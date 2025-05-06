@@ -1,50 +1,49 @@
-<?xml version = "1.0" encoding = "utf-8"?>
-<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
-    xmlns:app = "http://schemas.android.com/apk/res-auto"
-    android:layout_width = "match_parent"
-    android:layout_height = "match_parent"
-    android:background = "#2295F1"
-    android:gravity = "center"
-    android:orientation = "vertical">
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2295F1"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp">
 
-    <LinearLayout
-        android:layout_width = "match_parent"
-        android:layout_height = "match_parent"
-        android:orientation = "vertical">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginBottom="24dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/flashcards_logo" />
 
-        <ImageView
-            android:id = "@+id/imageView"
-            android:layout_width = "match_parent"
-            android:layout_height = "440dp"
-            app:srcCompat = "@drawable/flashcards_logo" />
+    <TextView
+        android:id="@+id/WelcomeMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/besley"
+        android:text="Welcome to the Flashcards App"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp" />
 
-        <TextView
-            android:id = "@+id/WelcomeMessage"
-            android:layout_width = "match_parent"
-            android:layout_height = "wrap_content"
-            android:layout_marginBottom = "20sp"
-            android:fontFamily = "@font/besley"
-            android:text = "Welcome to the Flashcards App"
-            android:textAlignment = "center"
-            android:textColor = "#0F0E0E"
-            android:textSize = "34sp" />
+    <TextView
+        android:id="@+id/BriefDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/besley"
+        android:text="This application will make learning much easier and fun!"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
 
-        <TextView
-            android:id = "@+id/BriefDescription"
-            android:layout_width = "match_parent"
-            android:layout_height = "wrap_content"
-            android:layout_marginBottom = "20sp"
-            android:fontFamily = "@font/besley"
-            android:text = "This application will make learning much easier and fun!"
-            android:textAlignment = "center"
-            android:textColor = "#0F0E0E"
-            android:textSize = "20sp" />
-
-        <Button
-            android:id = "@+id/btnStart"
-            android:layout_width = "match_parent"
-            android:layout_height = "wrap_content"
-            android:backgroundTint = "#FBF5F5"
-            android:text = "Start Quiz" />
-    </LinearLayout>
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Quiz"
+        android:textSize="18sp"
+        android:textColor="#0F0E0E"
+        android:backgroundTint="#FBF5F5" />
 </LinearLayout>

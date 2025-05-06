@@ -23,8 +23,8 @@ class ScoreScreen : Fragment(R.layout.score_screen) {
         // Retrieve the score passed from the quiz screen; default to 0 if not found.
         val score = arguments?.getInt("score") ?: 0
 
-        // Display the user's score.
-        scoreText.text = "Your score is: $score / 5"
+        // Display the user's score using a resource string.
+        scoreText.text = getString(R.string.score_message, score)
 
         // Hide the feedback text initially.
         feedbackText.visibility = View.GONE

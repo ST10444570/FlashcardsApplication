@@ -1,5 +1,6 @@
 package vcmsa.ci.flashcardsapp
 
+import android.annotation.SuppressLint
 import android.graphics.Color
 import android.os.Bundle
 import android.view.View
@@ -11,7 +12,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 
 // This class represents the quiz screen fragment.
-class quizScreen : Fragment(R.layout.quiz_screen) {
+class QuizScreen : Fragment(R.layout.quiz_screen) {
 
     // List of quiz questions and their corresponding correct answers.
     private val questions = listOf(
@@ -19,7 +20,7 @@ class quizScreen : Fragment(R.layout.quiz_screen) {
         Pair("Kotlin is used for Android development.", true),
         Pair("The sun rises in the west.", false),
         Pair("Water boils at 100°C.", true),
-        Pair("The moon is a planet.", false),
+        Pair("The moon is a planet.", false)
     )
 
     // Keeps track of which question the user is on.
@@ -32,6 +33,7 @@ class quizScreen : Fragment(R.layout.quiz_screen) {
     private var selectedAnswer: Boolean? = null
 
     // Called when the quiz screen view is created.
+    @SuppressLint("SetTextI18n")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 

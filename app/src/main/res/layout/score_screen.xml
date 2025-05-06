@@ -1,63 +1,84 @@
-<?xml version = "1.0" encoding = "utf-8"?>
-<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
-    android:layout_width = "match_parent"
-    android:layout_height = "match_parent"
-    xmlns:app = "http://schemas.android.com/apk/res-auto"
-    android:background = "#2295F1"
-    android:gravity = "center"
-    android:orientation = "vertical">
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#2295F1"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
 
     <LinearLayout
-        android:layout_width = "match_parent"
-        android:layout_height = "match_parent"
-        android:orientation = "vertical">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="24dp">
 
         <TextView
-            android:id = "@+id/screenHeading"
-            android:layout_width = "match_parent"
-            android:layout_height = "wrap_content"
-            android:fontFamily = "@font/besley"
-            android:text = "Score:"
-            android:textAlignment = "center"
-            android:textColor = "#0F0E0E"
-            android:textSize = "34sp" />
+            android:id="@+id/screenHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/besley"
+            android:text="Score:"
+            android:textAlignment="center"
+            android:textColor="#0F0E0E"
+            android:textSize="34sp"
+            android:layout_marginBottom="16dp" />
 
         <ImageView
-            android:id = "@+id/Logo"
-            android:layout_width = "match_parent"
-            android:layout_height = "382dp"
-            app:srcCompat = "@drawable/flashcards_logo" />
+            android:id="@+id/Logo"
+            android:layout_width="match_parent"
+            android:layout_height="319dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/flashcards_logo" />
 
         <TextView
-            android:id = "@+id/scoreText"
-            android:layout_width = "match_parent"
-            android:layout_height = "wrap_content"
-            android:fontFamily = "@font/besley"
-            android:text = "TextView"
-            android:textAlignment = "center"
-            android:textColor = "#0F0E0E"
-            android:textSize = "20sp" />
+            android:id="@+id/scoreText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/besley"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="#0F0E0E"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp" />
 
         <TextView
-            android:id = "@+id/reviewText"
-            android:layout_width = "match_parent"
-            android:layout_height = "wrap_content"
-            android:fontFamily = "@font/besley"
-            android:textAlignment = "center"
-            android:text = "TextView"
-            android:textColor = "#0F0E0E"
-            android:textSize = "20sp"/>
+            android:id="@+id/reviewText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/besley"
+            android:textAlignment="center"
+            android:text="TextView"
+            android:textColor="#0F0E0E"
+            android:textSize="20sp"
+            android:layout_marginBottom="24dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="32dp">
 
         <Button
-            android:id = "@+id/btnReview"
-            android:layout_width = "match_parent"
-            android:layout_height = "wrap_content"
-            android:text = "Review" />
+            android:id="@+id/btnReview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Review"
+            android:minHeight="56dp"
+            android:layout_marginBottom="24dp"
+            android:padding="16dp" />
 
         <Button
-            android:id = "@+id/btnExit"
-            android:layout_width = "match_parent"
-            android:layout_height = "wrap_content"
-            android:text = "Exit" />
+            android:id="@+id/btnExit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exit"
+            android:minHeight="56dp"
+            android:padding="16dp" />
     </LinearLayout>
 </LinearLayout>
