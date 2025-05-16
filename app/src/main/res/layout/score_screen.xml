@@ -19,12 +19,12 @@
             android:id="@+id/screenHeading"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             android:fontFamily="@font/besley"
             android:text="Score:"
             android:textAlignment="center"
-            android:textColor="#0F0E0E"
-            android:textSize="34sp"
-            android:layout_marginBottom="16dp" />
+            android:textColor="#FFFFFF"
+            android:textSize="34sp" />
 
         <ImageView
             android:id="@+id/Logo"
@@ -38,23 +38,23 @@
             android:id="@+id/scoreText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
             android:fontFamily="@font/besley"
             android:text="TextView"
             android:textAlignment="center"
-            android:textColor="#0F0E0E"
-            android:textSize="20sp"
-            android:layout_marginBottom="8dp" />
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/reviewText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
             android:fontFamily="@font/besley"
-            android:textAlignment="center"
             android:text="TextView"
-            android:textColor="#0F0E0E"
-            android:textSize="20sp"
-            android:layout_marginBottom="24dp" />
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -68,17 +68,21 @@
             android:id="@+id/btnReview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Review"
-            android:minHeight="56dp"
             android:layout_marginBottom="24dp"
-            android:padding="16dp" />
+            android:backgroundTint="#FBF5F5"
+            android:fontFamily="@font/besley"
+            android:minHeight="56dp"
+            android:padding="16dp"
+            android:text="Review" />
 
         <Button
             android:id="@+id/btnExit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Exit"
+            android:backgroundTint="#FBF5F5"
+            android:fontFamily="@font/besley"
             android:minHeight="56dp"
-            android:padding="16dp" />
+            android:padding="16dp"
+            android:text="Exit" />
     </LinearLayout>
 </LinearLayout>
