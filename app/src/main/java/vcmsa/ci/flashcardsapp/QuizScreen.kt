@@ -96,7 +96,7 @@ class QuizScreen : Fragment(R.layout.quiz_screen) {
                     currentQuestion++
                     loadQuestion()
                 } else {
-                    // End of quiz — send score to the score screen.
+                    // End of quiz then send score to the score screen.
                     val bundle = Bundle().apply {
                         putInt("score", score)
                     }

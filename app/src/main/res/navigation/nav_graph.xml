@@ -39,5 +39,4 @@
             android:id="@+id/action_scoreFragment_self"
             app:destination="@id/scoreFragment" />
     </fragment>
-
 </navigation>

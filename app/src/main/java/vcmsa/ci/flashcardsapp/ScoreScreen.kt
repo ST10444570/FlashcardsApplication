@@ -70,7 +70,14 @@ class ScoreScreen : Fragment(R.layout.score_screen) {
                 val result = if (isCorrect) "Correct"
                     else "Incorrect"
 
-                feedbackText.text = "Q${index + 1}: $question\nYour Answer: $userAnswer\nCorrect Answer: $correctAnswer\n$result"
+                feedbackText.text = getString(
+                    R.string.review_message,
+                    index + 1,
+                    question,
+                    userAnswer,
+                    correctAnswer,
+                    result
+                )
 
                 index++
                 handler.postDelayed({ showNextQuestion() }, 2000) // 2 second delay.

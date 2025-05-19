@@ -1,19 +1,29 @@
 <resources>
-    <string name="app_name">FlashcardsApp</string>
-    <string name="score_message">Your score is: %1$d / 5</string>
-    <string name="welcome_message">Welcome to the Flashcards App</string>
-    <string name="brief_description">This application will make learning much easier and fun!</string>
-    <string name="start_quiz">Start Quiz</string>
-    <string name="questions_heading">Questions:</string>
-    <string name="logo_description">Flashcards logo</string>
-    <string name="question_placeholder">Question will appear here</string>
-    <string name="result_placeholder">Result will appear here</string>
-    <string name="next">Next</string>
-    <string name="btnTrue">True</string>
-    <string name="btnFalse">False</string>
-    <string name="score_heading">Score:</string>
-    <string name="score_placeholder">Your score will appear here</string>
-    <string name="review_placeholder">Review your answers</string>
-    <string name="review">Review</string>
-    <string name="exit">Exit</string>
+    <!-- App Name -->
+    <string name = "app_name"> Flashcards App </string>
+
+    <!-- Welcome Screen -->
+    <string name = "welcome_message"> Welcome to the Flashcards App </string>
+    <string name = "brief_description"> This application will make learning much easier and fun! </string>
+    <string name = "start_quiz"> Start Quiz </string>
+
+    <!-- Quiz Screen -->
+    <string name = "questions_heading"> Questions: </string>
+    <string name = "question_placeholder"> Question will appear here </string>
+    <string name = "btnNext"> Next </string>
+    <string name = "btnTrue"> True </string>
+    <string name = "btnFalse"> False </string>
+
+    <!-- Score Screen -->
+    <string name = "score_heading"> Score: </string>
+    <string name = "score_message"> Your score is: %1$d / 5 </string>
+    <string name = "btnReview"> Review </string>
+    <string name = "btnExit"> Exit </string>
+
+    <string name = "review_message">
+        Q%1$d: %2$s\nYour Answer: %3$s\nCorrect Answer: %4$s\n%5$s
+    </string>
+
+    <!-- Accessibility -->
+    <string name = "flashcards_logo_description"> Flashcards App Logo </string>
 </resources>
