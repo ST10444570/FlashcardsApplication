@@ -566,7 +566,9 @@ Figure 6: Screenshot of Score Screen
 ![image](https://github.com/user-attachments/assets/e8a544f4-435b-4429-9fc2-302301d6f519)
 
 Figure 7: Screenshot of an Example of a Review
- 
+
+
+ 
 Design View from Android Studio
 
 ![image](https://github.com/user-attachments/assets/81e0c77e-325a-4c2e-a068-c2fd6c690b38)
