@@ -1,50 +1,50 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#2295F1"
-    android:gravity="center"
-    android:orientation="vertical"
-    android:padding="24dp">
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:background = "#2295F1"
+    android:gravity = "center"
+    android:orientation = "vertical"
+    android:padding = "24dp">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_marginBottom="24dp"
-        android:scaleType="fitCenter"
-        android:contentDescription="@string/flashcards_logo_description"
-        app:srcCompat="@drawable/flashcards_logo" />
+        android:id = "@+id/imageView"
+        android:layout_width = "match_parent"
+        android:layout_height = "300dp"
+        android:layout_marginBottom = "24dp"
+        android:scaleType = "fitCenter"
+        android:contentDescription = "@string/flashcards_logo_description"
+        app:srcCompat = "@drawable/flashcards_logo" />
 
 
     <TextView
-        android:id="@+id/WelcomeMessage"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:fontFamily="@font/besley"
-        android:text="@string/welcome_message"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="28sp" />
+        android:id = "@+id/WelcomeMessage"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_marginBottom = "16dp"
+        android:fontFamily = "@font/besley"
+        android:text = "@string/welcome_message"
+        android:textAlignment = "center"
+        android:textColor = "#FFFFFF"
+        android:textSize = "28sp" />
 
     <TextView
-        android:id="@+id/BriefDescription"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:fontFamily="@font/besley"
-        android:text="@string/brief_description"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp" />
+        android:id = "@+id/BriefDescription"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_marginBottom = "32dp"
+        android:fontFamily = "@font/besley"
+        android:text = "@string/brief_description"
+        android:textAlignment = "center"
+        android:textColor = "#FFFFFF"
+        android:textSize = "18sp" />
 
     <Button
-        android:id="@+id/btnStart"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/start_quiz"
-        android:textSize="18sp"
-        android:textColor="#0F0E0E"
-        android:backgroundTint="#FBF5F5" />
+        android:id = "@+id/btnStart"
+        android:layout_width = "350dp"
+        android:layout_height = "wrap_content"
+        android:text = "@string/start_quiz"
+        android:textSize = "18sp"
+        android:textColor = "#0F0E0E"
+        android:backgroundTint = "#FBF5F5" />
 </LinearLayout>

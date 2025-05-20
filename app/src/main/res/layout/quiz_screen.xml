@@ -1,97 +1,97 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#2295F1"
-    android:gravity="center"
-    android:orientation="vertical"
-    android:padding="16dp">
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:background = "#2295F1"
+    android:gravity = "center"
+    android:orientation = "vertical"
+    android:padding = "16dp">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center_horizontal">
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:orientation = "vertical"
+        android:gravity = "center_horizontal">
 
         <TextView
-            android:id="@+id/screenHeading"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:fontFamily="@font/besley"
-            android:text="@string/questions_heading"
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="34sp" />
+            android:id = "@+id/screenHeading"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_marginBottom = "16dp"
+            android:fontFamily = "@font/besley"
+            android:text = "@string/questions_heading"
+            android:textAlignment = "center"
+            android:textColor = "#FFFFFF"
+            android:textSize = "34sp" />
 
         <ImageView
-            android:id="@+id/Logo"
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:layout_marginBottom="16dp"
-            android:scaleType="centerInside"
-            android:contentDescription="@string/flashcards_logo_description"
-            app:srcCompat="@drawable/flashcards_logo" />
+            android:id = "@+id/Logo"
+            android:layout_width = "match_parent"
+            android:layout_height = "250dp"
+            android:layout_marginBottom = "16dp"
+            android:scaleType = "centerInside"
+            android:contentDescription = "@string/flashcards_logo_description"
+            app:srcCompat = "@drawable/flashcards_logo" />
 
 
         <TextView
-            android:id="@+id/questionText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:fontFamily="@font/besley"
-            android:text="@string/question_placeholder"
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp" />
+            android:id = "@+id/questionText"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_marginBottom = "8dp"
+            android:fontFamily = "@font/besley"
+            android:text = "@string/question_placeholder"
+            android:textAlignment = "center"
+            android:textColor = "#FFFFFF"
+            android:textSize = "20sp" />
 
         <TextView
-            android:id="@+id/resultText"
-            android:layout_width="match_parent"
-            android:layout_height="39dp"
-            android:fontFamily="@font/besley"
-            android:text=""
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp" />
+            android:id = "@+id/resultText"
+            android:layout_width = "match_parent"
+            android:layout_height = "39dp"
+            android:fontFamily = "@font/besley"
+            android:text = "@string/result_placeholder"
+            android:textAlignment = "center"
+            android:textColor = "#FFFFFF"
+            android:textSize = "20sp" />
     </LinearLayout>
 
     <LinearLayout
-        style="?android:attr/buttonBarStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_marginBottom="16dp">
+        style = "?android:attr/buttonBarStyle"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:orientation = "horizontal"
+        android:gravity = "center"
+        android:layout_marginBottom = "16dp">
 
         <Button
-            android:id="@+id/btnTrue"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:backgroundTint="#FBF5F5"
-            android:text="@string/btnTrue"
-            android:textColor="#0F0E0E"
-            android:textSize="18sp" />
+            android:id = "@+id/btnTrue"
+            android:layout_width = "175dp"
+            android:layout_height = "wrap_content"
+            android:layout_marginTop = "16dp"
+            android:backgroundTint = "#FBF5F5"
+            android:text = "@string/btnTrue"
+            android:textColor = "#0F0E0E"
+            android:textSize = "18sp" />
 
         <Button
-            android:id="@+id/btnFalse"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:backgroundTint="#FBF5F5"
-            android:text="@string/btnFalse"
-            android:textColor="#0F0E0E"
+            android:id = "@+id/btnFalse"
+            android:layout_width = "175dp"
+            android:layout_height = "wrap_content"
+            android:layout_marginTop = "16dp"
+            android:backgroundTint = "#FBF5F5"
+            android:text = "@string/btnFalse"
+            android:textColor = "#0F0E0E"
             android:textSize="18sp" />
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnNext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="#FBF5F5"
-        android:text="@string/btnNext"
-        android:textColor="#0F0E0E"
-        android:textSize="18sp" />
+        android:id = "@+id/btnNext"
+        android:layout_width = "350dp"
+        android:layout_height = "wrap_content"
+        android:layout_marginTop = "16dp"
+        android:backgroundTint = "#FBF5F5"
+        android:text = "@string/btnNext"
+        android:textColor = "#0F0E0E"
+        android:textSize = "18sp" />
 </LinearLayout>

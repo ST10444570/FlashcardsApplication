@@ -9,67 +9,69 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 
+// This fragment displays the user's score and feedback after the quiz, allows the user to review their answers, or return to the welcome screen.
 class ScoreScreen : Fragment(R.layout.score_screen) {
 
+    // UI elements
     private lateinit var scoreText: TextView
     private lateinit var feedbackText: TextView
     private lateinit var reviewButton: Button
     private lateinit var exitButton: Button
 
-    // Called when the fragment's view has been created.
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Get references to UI elements.
+        // Link UI elements with XML layout
         scoreText = view.findViewById(R.id.scoreText)
         feedbackText = view.findViewById(R.id.reviewText)
         reviewButton = view.findViewById(R.id.btnReview)
         exitButton = view.findViewById(R.id.btnExit)
 
-        // Retrieve the score and review data passed from the quiz screen.
+        // Get data passed from QuizScreen
         val score = arguments?.getInt("score") ?: 0
         val questions = arguments?.getStringArrayList("questions") ?: arrayListOf()
         val userAnswers = arguments?.getStringArrayList("userAnswers") ?: arrayListOf()
         val correctAnswers = arguments?.getStringArrayList("correctAnswers") ?: arrayListOf()
 
-        // Show score and feedback immediately.
+        // Display score and feedback
         scoreText.text = getString(R.string.score_message, score)
-        feedbackText.text = getFeedback(score)
+        feedbackText.text = getFeedback(score, questions.size)
         feedbackText.visibility = View.VISIBLE
 
-        // REVIEW button to cycle through each question and answer.
+        // When the review button is clicked, start reviewing questions
         reviewButton.setOnClickListener {
             runReview(questions, userAnswers, correctAnswers)
         }
 
-        // EXIT button to navigate back to welcome screen.
+        // When the exit button is clicked, go back to the welcome screen
         exitButton.setOnClickListener {
             findNavController().navigate(R.id.action_scoreFragment_to_welcomeFragment)
         }
     }
 
-    // Function to display question-by-question review with delay.
+    // This function automatically displays each question, user answer, and correct answer one by one
     private fun runReview(
         questions: List<String>,
         userAnswers: List<String>,
         correctAnswers: List<String>
     ) {
-        reviewButton.isEnabled = false // disable button during review.
-        exitButton.isEnabled = false // disable button during review.
+        // Disable buttons while review is running
+        reviewButton.isEnabled = false
+        exitButton.isEnabled = false
 
         val handler = Handler(Looper.getMainLooper())
         var index = 0
 
+        // Function to display each question with its result
         fun showNextQuestion() {
             if (index < questions.size) {
                 val question = questions[index]
                 val userAnswer = userAnswers.getOrNull(index) ?: "No answer"
                 val correctAnswer = correctAnswers.getOrNull(index) ?: "Unknown"
-
                 val isCorrect = userAnswer.equals(correctAnswer, ignoreCase = true)
-                val result = if (isCorrect) "Correct"
-                    else "Incorrect"
+                val result = if (isCorrect) "Correct" else "Incorrect"
 
+                // Display the review message with question details
                 feedbackText.text = getString(
                     R.string.review_message,
                     index + 1,
@@ -80,9 +82,11 @@ class ScoreScreen : Fragment(R.layout.score_screen) {
                 )
 
                 index++
-                handler.postDelayed({ showNextQuestion() }, 2000) // 2 second delay.
+
+                // Wait for 2 seconds before showing the next question
+                handler.postDelayed({ showNextQuestion() }, 2000)
             } else {
-                // Review complete, navigate back to score screen.
+                // Restart the ScoreScreen fragment once review is finished
                 findNavController().navigate(R.id.action_scoreFragment_self)
             }
         }
@@ -90,13 +94,13 @@ class ScoreScreen : Fragment(R.layout.score_screen) {
         showNextQuestion()
     }
 
-    // Generate feedback message based on final score
-    private fun getFeedback(score: Int): String {
+    // Generates feedback text based on the user's score
+    private fun getFeedback(score: Int, total: Int): String {
         return when {
-            score == 5 -> "Perfect! You're a quiz master!"
-            score >= 4 -> "Great job! You really know your stuff!"
-            score >= 3 -> "Good effort! Keep practicing!"
-            score >= 2 -> "Not bad, but there's room for improvement."
+            score == total -> "Perfect! You're a quiz master!"
+            score >= total - 1 -> "Great job! You really know your stuff!"
+            score >= total / 2 -> "Good effort! Keep practicing!"
+            score >= 1 -> "Not bad, but there's room for improvement."
             else -> "Keep trying! You’ll get better with practice!"
         }
     }

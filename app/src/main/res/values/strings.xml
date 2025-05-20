@@ -10,19 +10,17 @@
     <!-- Quiz Screen -->
     <string name = "questions_heading"> Questions: </string>
     <string name = "question_placeholder"> Question will appear here </string>
+    <string name = "result_placeholder"> Result will appear here </string>
     <string name = "btnNext"> Next </string>
     <string name = "btnTrue"> True </string>
     <string name = "btnFalse"> False </string>
 
     <!-- Score Screen -->
     <string name = "score_heading"> Score: </string>
-    <string name = "score_message"> Your score is: %1$d / 5 </string>
+    <string name = "score_message"> Your score: %1$d </string>
     <string name = "btnReview"> Review </string>
     <string name = "btnExit"> Exit </string>
-
-    <string name = "review_message">
-        Q%1$d: %2$s\nYour Answer: %3$s\nCorrect Answer: %4$s\n%5$s
-    </string>
+    <string name = "review_message"> Q%1$d: %2$s\nYour Answer: %3$s\nCorrect Answer: %4$s\nResult: %5$s </string>
 
     <!-- Accessibility -->
     <string name = "flashcards_logo_description"> Flashcards App Logo </string>
