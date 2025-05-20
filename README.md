@@ -594,15 +594,27 @@ Utilisation of GitHub and GitHub Actions
 -	
  
 Reference List
+
 OpenAI. (2024) ChatGPT (April 2024 version) [Online]. Available at: https://chat.openai.com/ (Accessed: 5 May 2025).
+
 Stack Overflow (n.d.) Questions. Available at: https://stackoverflow.com/questions (Accessed: 5 May 2025). 
+
 Lephoto, T. (2025) Figure 1: Screenshot of Welcome Screen. [Image] Created by Tisetso Lephoto, 20 May.
+
 Lephoto, T. (2025) Figure 2: Screenshot of Questions Screen. [Image] Created by Tisetso Lephoto, 20 May.
+
 Lephoto, T. (2025) Figure 3: Screenshot of Correct Answer. [Image] Created by Tisetso Lephoto, 20 May. 
+
 Lephoto, T. (2025) Figure 4: Screenshot of Incorrect Answer. [Image] Created by Tisetso Lephoto, 20 May.
+
 Lephoto, T. (2025) Figure 5: Screenshot of Error Message. [Image] Created by Tisetso Lephoto, 20 May.
+
 Lephoto, T. (2025) Figure 6: Screenshot of Score Screen. [Image] Created by Tisetso Lephoto, 20 May. 
+
 Lephoto, T. (2025) Figure 7: Screenshot of an Example of a Review. [Image] Created by Tisetso Lephoto, 20 May. 
+
 Lephoto, T. (2025) Figure 8: Design View of the Welcome Screen. [Image] Created by Tisetso Lephoto, 5 May.
+
 Lephoto, T. (2025) Figure 9: Design View of the Quiz Screen. [Image] Created by Tisetso Lephoto, 5 May.
+
 Lephoto, T. (2025) Figure 10: Design View of the Score Screen. [Image] Created by Tisetso Lephoto, 5 May. 
