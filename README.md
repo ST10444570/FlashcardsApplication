@@ -584,9 +584,13 @@ Figure 9: Design View of the Quiz Screen.
 Figure 10: Design View of the Score Screen. 
 
 Utilisation of GitHub and GitHub Actions
+
 •	GitHub Link
--	https://github.com/ST10444570/FlashcardsApplication.git 
+
+-	https://github.com/ST10444570/FlashcardsApplication.git
+
 •	YouTube Video Link
+
 -	
  
 Reference List
